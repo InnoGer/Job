@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Listings</title>
+</head>
+<body>
+    <h1>Job Listings</h1>
+    <ul>
+        {% for job in jobs %}  <!-- Boucle sur la liste des jobs passée au template -->
+            <li>{{ job.title }} - {{ job.location }} ({{ job.posted_date }})</li>  <!-- Affiche le titre, la localisation et la date de publication de chaque job -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
